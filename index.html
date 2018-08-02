@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Dmitry S. Dyatluk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+       
+ <style>
+   #grow { transition: all .2s ease-in-out; }
+#grow:hover { transform: scale(1.1);
+             
+                                     }
+.progress { height: 7%; 
+            transition: all .2s ease-in-out; }
+.progress:hover { transform: scale(1.1);
+}
+									 
+									 
+#overlay {background-color: transparent }
+.card-header:hover {  background-color: rgba(0, 0, 0, 0.3);
+            
+             top: 0;
+            left: 0;
+            transition: opacity .25s ease-in-out;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background: grey;
+	color: white;
+	}
+
+a:link {
+    text-decoration: none;
+}
+.card-block {  background-color: rgba(0, 0, 0, 0.3); }
+.navbar {  margin:0}
+
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('files/Cyber-Kill-Chain.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Qualifications) */
+.bgimg-2 {
+    background-image: url("files/14949.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Experience) */
+.bgimg-3 {
+    background-image: url("files/wp2141407.jpg");
+    min-height: 400px;
+}
+
+
+/* Fourth image (Education) */
+.bgimg-4 {
+    background-image: url("files/study.jpg");
+    min-height: 400px;
+}
+
+.progress-bar {
+  width: 0;
+  animation: progress 1.5s ease-in-out forwards;
+  
+  .title {
+    opacity: 0;
+    animation: show 0.35s forwards ease-in-out 0.5s;
+  }
+} 
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} 
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+</style>
+</head>
+
+
+
+<body>
+
+ <div class="bgimg-1 w3-display-container w3-opacity-min" id="home" alt="home"> 								
+	<div id="resume" >														
+															
+<div  class="jumbotron text-center" style="background-color: rgba(128, 0, 0, 0.3);
+       color: white;
+       text-shadow: 0 0 10px black, 0 0 18px black; margin-bottom: 0;">
+	   <br><br><br><br><br><br><br><br><br><br>
+	   
+ <div id="grow" class="container"><h1><a id="hider1" href=" #Resume" style="color: white; font-size: 200%;display:none">DMITRY S. DYATLUK</a></h1>
+ 
+ <blockquote class="blockquote">
+  <p id="hider2" class="mb-0" style=" color: white; font-size: 250%; text-shadow: 0 0 10px black, 0 0 18px black; display:none">«Fais ce que dois, advienne, que pourra» </p>
+  <footer id="hider3" class="blockquote-footer" style=" color: white; font-size: 150%; text-shadow: 0 0 10px black, 0 0 18px black; display:none">«A chain is no stronger than its weakest link» <cite title="Source Title"><br>Thomas Reid</cite></footer>
+</blockquote><br><br><br><br><br><br><br><br><br></div>
+</div>
+ 
+</div>
+</div>
+  <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top"style="margin-bottom:0;">
+  <!-- Brand -->
+  <a id="grow" class="navbar-brand" href="#resume" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">Dmitry S. Dyatluk</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+ <div class="collapse navbar-collapse " id="collapsibleNavbar">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a id="grow" class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Contact</a>	  
+    </li>
+    <li class="nav-item">
+      <a id="grow" class="nav-link" href="files/DmitryDyatluk.pdf">Resume</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a id="grow" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" >
+        Contents
+      </a>
+      <div class="dropdown-menu" style=" background-color: rgba(0, 0, 0, 0.3); border-color: transparent; color: white; text-shadow: 0 0 3px black, 0 0 7px black">
+        <a class="dropdown-item" href="#Qualifications" style="color: white; text-shadow: 0 0 3px black, 0 0 7px black">Qualifications</a>
+        <a class="dropdown-item" href="#Experience" style="color: white; text-shadow: 0 0 3px black, 0 0 7px black">Experience</a>
+        <a class="dropdown-item" href="#Education" style="color: white; text-shadow: 0 0 3px black, 0 0 7px black">Education</a>
+      </div>
+    </li>
+  </ul>
+</div>
+</nav>
+
+<div class="modal fade" id="myModal" >
+    <div class="modal-dialog">
+	 <div class="modal-content" style=" background-color: rgba(0, 0, 0, 0.3); border-color: transparent; color: white; text-shadow: 0 0 3px black, 0 0 7px black">
+       <!-- Modal Header -->
+        <div class="modal-header" style="color: white;text-shadow: 0 0 3px black, 0 0 7px black">
+          <h4 class="modal-title">My Contact info</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        
+        <div class="modal-body">
+           <div class="list-group">
+               <a href="tel:813-719-0692" class="list-group-item"  style=" background-color: transparent; border-color: transparent; color: white; text-shadow: 0 0 3px black, 0 0 7px black"><i class="fa fa-android" > <b>813-719-0692</b> </i></a> 
+               <a href="mailto:ddyatluk@gmail.com" class="list-group-item"  style=" background-color: transparent; border-color: transparent; color: white; text-shadow: 0 0 3px black, 0 0 7px black;"><i class="fa fa-at"> <b>ddyatluk@gmail.com</b> </i></a>
+               <a href="https://www.linkedin.com/in/dmitry-dyatluk-902a5776" class="list-group-item"  style=" background-color: transparent; border-color: transparent; color: white; text-shadow: 0 0 3px black, 0 0 7px black"><i class="fa fa-linkedin-square"> <b>dmitry.dyatluk</b> </i></a>
+           </div>
+        </div>  
+        <!-- Modal footer -->
+        <div class="modal-footer" style="background-image: url(files/Color.png);">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+ 
+ <!-- Sections -->
+ <section class="page-section" id="about">
+      <div class="container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+        <div class="row">
+          <div class="col-lg-6">
+            <img class="img-fluid rounded my-5" src="files/n.jpg" alt="n" style="box-shadow: 5px 5px 5px grey;">
+          </div>
+          <div class="col-lg-6 text-center my-auto">
+            <h1>HI, I'M DMITRY.</h1>
+            <hr class="colored">
+            <p>I am an IT Security Engineer and ISA based in Tampa, Florida. I have a professional background in both software secuity and security architecture. Finishing up my degree in IT Engineering from the University of South Florida.</p>
+            <p>I have experience working with on-premise, cloud and hybrid infrastructures, engineering security solutions and developing securty strategies, threat management and risk assessment. Hardening your systems and maintaining security can be a tough challenge, but having a skillful and experienced professional on your team will put your mind at ease.  </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+                  <div id="Qualifications"></div>
+				
+     <div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"><br><br><br><br><br><br><div align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;text-size: 150%;"><h1><b>MY EXPERTISE</b></h1></div></span>
+  </div>
+
+  <br><br><br>
+       <div class="container">
+        <div class="row">
+        <div id="grow" class="col-sm-6" style="background-image: url(files/73.png); background-repeat: no-repeat; background-position: center;">
+           <div id="accordion">
+           <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div  class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#IT" align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+          <h3>IT Security</h3>
+        </a>
+      </div>
+      <div id="IT" class="collapse">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+            <center>5+ IT experience in Information Systems Architecture Design and Security Management.</center> 
+        </div>
+      </div>
+    </div>
+    <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#GUI" align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+        <h3>Cloud</h3>
+      </a>
+      </div>
+      <div id="GUI" class="collapse">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+            <center>IaaS Environment: VMware vSphere, Citrix, Amazon Web Services</center>
+        </div>
+      </div>
+    </div>
+    <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#databaseManagement" align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+          <h3>Database Management</h3>
+        </a>
+      </div>
+      <div id="databaseManagement" class="collapse">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+            <center>Strong in Database Development including designing and administering databases, data encryption, front end data validation for SQL Server and Oracle databases.</center> 
+        </div>
+      </div>
+    </div>
+	<div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#languages" align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+         <h3>Languages</h3>
+        </a>
+      </div>
+      <div id="languages" class="collapse">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+            <center>ASP, VBSCRIPT, JAVA, JAVASCRIPT, HTML, YAML, SQL, PYTHON, CSS, C, C++, C#</center>
+        </div>
+      </div>
+    </div>
+	<div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#certificates" align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+          <h3>Certificates</h3>
+        </a>
+      </div>
+      <div id="certificates" class="collapse" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+        <div class="card-block">
+            <center>Network+, Security+, CISSP</center>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+	  </div>
+	  
+	 
+	 <div id="grow" class="col-sm-6 " style="background-image: url(files/73.png);background-repeat: no-repeat; background-position: center;">
+	 
+      <div id="accordion2">
+    <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion2" href="#anaytical" align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+          <h3>Penetration Testing</h3>
+        </a>
+      </div>
+      <div id="anaytical" class="collapse">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+           <center>In-depth knowledge of forensic tools like EnCase toolikt, Kali (including Metasploit Framework, nmap, snort, etc), Access Data Toolkit, Network monitoring and analysis tools like Wireshark, Autopsy,RSA NetWitness, etc.</center>
+        </div>
+      </div>
+    </div>
+    <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion2" href="#cycle" align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+        <h3>DevOps</h3>
+      </a>
+      </div>
+      <div id="cycle" class="collapse">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+            <center>Strong understanding of SDLC and its relationship with production environment. Implementation of NIST/ISO Security Standards during all phases of SDLC.</center>
+        </div>
+      </div>
+    </div>
+    <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion2" href="#admin" align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+          <h3>SysAdmin</h3>
+        </a>
+      </div>
+      <div id="admin" class="collapse">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+        <center>Professional/SysAdmin knowledge of Linux, MS Windows Server 2012/2016, IIS,
+        MS Windows 7, 8, 8.1,10, MacOS and other computer operating systems combined with an aptitude for conducting Vulnerability Assessments in Applications, Systems and Network Infrastructures.</center>
+        </div>
+      </div>
+    </div>
+	<div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion2" href="#people" align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+          <h3>People's Person</h3>
+        </a>
+      </div>
+      <div id="people" class="collapse">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+       <center>Strong Communication and Interpersonal skills.</center>
+        </div>
+      </div>
+    </div>
+	<div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion2" href="#webDesign" align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+          <h3>Policy</h3>
+        </a>
+      </div>
+      <div id="webDesign" class="collapse">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+          <center>Security Strategy and Policy development and implementation. Enforcing industry security standards.</center>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+      </div>
+       </div>
+	   <br><br></div>
+	   </div>
+ <!-- end of overlay-->
+ 
+ <!--resume download page-->
+
+ <section id="download" class="bg-dark text-white" style=" border-top: 1px solid black;
+   border-bottom: 1px solid white">
+      <div class="container text-center">
+        <h2 class="mb-4" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">Get a Copy of My Resume!</h2>
+        <a class="btn btn-light btn-xl sr-button" href="files/DmitryDyatluk.pdf" data-sr-id="6" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">Download Now!</a>
+      </div><br>
+    </section>
+ 
+
+ <div id="Experience"></div>
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"><br><br><br><br><br><br><div align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;text-size: 150%;"><h1><b>EXPERIENCE</b></h1></div></span>
+  </div>
+
+<div id="overlay">
+
+                
+				  <br><br><br>
+     
+	   
+<div id="grow" class="container" style="background-image: url(files/73.png);background-repeat: no-repeat; background-position: center;">	
+
+<div id="accordion3">
+    <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion3" href="#HCTC">
+	
+<h3><div align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">2017 – Present, Sr. IT Analyst </div></h3></a>
+</div>
+      <div id="HCTC" class="collapse hide">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+<ul>
+  <li> Senior Analyst in Hybrid Infrastructure team, responsible for monitoring systems and developing and implementing technical solutions.</li>
+  <li> Work in both: Infrastructure projects and DevOps by analyzing requirements, preparing a work flow charts and diagrams, using knowledge of SDLC and Security Standards, subject matter expert in Security Architecture and Engineering, programming languages and logic.</li> 
+    <li> Work as a part of development team, planning and delivering software and platforms used across multiple products and organizational units.</li>
+  <li> Confirm Policies and Standards compliance by conducting assessments and audits; modifying configurations and/or automating processes.</li>
+  <li> Provide reference for use of systems and computers by writing and maintaining documentation;</li>
+  <li> Monitor infrastructure systems for potential security issues and conduct timely updates and maintenance by producing batches for automation and utilizing monitoring tools and systems, conducting vulnerability assessments.</li>
+    <li>An active member of Security Strategy Team, provide Industry Security Standards Expertise to higher management in order to improve Organizational Security Baseline through updating Organization’s Policies, conducting “table top” exercises (and other simulations), providing cybersecurity training for personnel and implementing approved policy changes.</li>
+</ul>
+</div>
+      </div>
+       </div>
+	   
+
+
+
+
+
+	
+    <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion3" href="#spectrum">
+
+<h3><div align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">2015 – 2017, Field Network Support Engineer</div></h3></a>
+</div>
+      <div id="spectrum" class="collapse hide">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+<ul>
+  <li> Perform field LAN/WAN network installations, troubleshooting and conducting repairs, according to industry standards and technical specifications. </li>
+  <li> Established voice and data networks by running, pulling, terminating, and splicing cables, installing telecommunications equipment (Cisco, Scientific Atlanta, etc.), Nodes, Amplifiers, Taps, routers and other network devices, programming performance and security features, minimizing risk of tampering/damage; following industry standards; coordinating with contractors</li> 
+  <li> Verify service by testing circuits, equipment, and connections; identifying, correcting, or/and escalating problems via ticketing/referral systems. </li>
+  <li> Analyze network topology for performance issues or potential improvements and suggest/implement changes, document changes by labeling routing equipment and lines; recording configuration diagrams and specifications.</li>
+  <li> Provide expert level customer service via face-to-face communication and number of remote channels.</li>
+  <li> Maintain safe and secure work environment by following Federal/State Safety Codes, Company Safety Standards, and OSHA regulations.</li>
+  <li> Enhance department and organization reputation by accepting ownership for accomplishing new and different requests; exploring opportunities to add value to job accomplishments.</li>
+</ul>
+ </div>
+      </div>
+       </div>
+	  
+	
+	
+    <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion3" href="#usaa">
+	
+<h3><div align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">2014 – 2015 Claims Adjuster</div></h3></a>
+</div>
+      <div id="usaa" class="collapse hide">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+<ul>
+  <li> Provided AUTO/NON-INJURY claims service via internal channels (phone/email/fax/mail/other electronic channels) to members and third-party customers;</li>
+  <li> Adjusted low to moderately complex auto and property damage claims; </li>
+  <li> Acquired and applied knowledge of P&amp;C industry products, services, and processes to include P&amp;C policy contracts and coverages and claim handling process and procedures;</li> 
+  <li> Worked as individual and in a team environment to resolve and to identify appropriate issues for escalation. Worked with vendors, and internal business partners to facilitate claims resolution; </li>
+  <li> Contributed to business goals and performance metrics, and effectively used tools &amp; technology to meet time lines and compliance with DOI regulations; </li>
+  <li> Maintained customers’ profiles and timely updated claim records. Prepared and documented correspondence and reports for management, utilizing corporate claim matrix software and MS Office Products;</li>
+</ul>
+</div>
+      </div>
+       </div>
+	   
+		
+	
+    <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion3" href="#army">
+	
+<h3><div align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">2010 - 2013 Logistics Specialist</div></h3></a>
+</div>
+<div id="army" class="collapse hide">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+
+<ul>
+ <li> Performed receiving, storing and issuing and distributing conventional ammunition for
+military operations;</li>
+<li> Supervised Ammunition Handling Team to enforce Standard Operating Procedures and to meet
+regulations and guidelines;</li>
+<li> Operated automated equipment and utilized Windows OS environment to generate, maintain and
+update manual records in order to perform stock control and accounting procedures;</li>
+<li> Coordinated with military and civilian officials for planning and processing all distribution
+operations;</li>
+<li> Ensured high level of service by providing personnel with training and all necessary
+resources;</li>
+<li> Conducted and Maintained accountability and security of all components of the task force
+equipment and Personnel;</li>
+<li> Ensured high level of service by providing personnel with training and all necessary
+resources;</li>
+<li> Conducted and Maintained accountability and security of all components of the task force
+Equipment and Personnel;</li>
+<li> Created and Maintained appropriate records and reports to meet all required time lines and
+compliance with Department of Defense and Department of the Army regulations;</li>
+</ul>
+</div>
+      </div>
+       </div>
+	  
+	
+	
+    <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion3" href="#sysAdmin">
+	
+<h3><div align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">2003 – 2006 Network Administrator</div></h3></a>
+</div>
+<div id="sysAdmin" class="collapse hide">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+<ul> 
+ 
+ <li>Designed and maintained Microsoft Windows based infrastructure for Law firm office including: modems, routers/firewalls, switches, wireless APs, Backup Server, Web Server, Database servers, Workstations, designed and wired IDF/Server room.</li>
+ <li> Worked as lead in company website project, designed and deployed front end features, including office calendar, schedules and communication tools for coordinating appointments with Clients and Public Officials.</li>
+ <li> Installed and maintained software applications and hardware, planned and implemented software updates, changes, Upgrade systems and processes as required for enhanced functionality and security issue resolution.</li>
+ <li> Maintained user identity and access control by creating and maintaining user profiles; assigning application access, ensuring security, and keeping their configurations within standards..</li>
+ <li>Maintained systems security by configuring perimeter firewall, installing and updating antivirus software, providing management guidance and security awareness training for personnel.</li>
+</ul>
+</div>
+      </div>
+        </div>
+	      </div>  
+		   <br><br><br>
+			 </div>
+		  </div> <!-- end of overlay-->
+</div>
+		
+
+
+	
+<!-- Sections -->
+ <section class="page-section" id="about">
+      <div class="container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+        <div class="row">
+            <div class="col-lg-6 text-center my-auto">
+            <h2>OUTSIDE OF WORK</h2>
+            <hr class="colored">
+            <p>I'm a strong, dedicated professional, but I enjoy my life outside of work too.</p>
+            <p>I like spending time with my family, travel, sports and giving back to society and my local community. I believe in healthy work/life balance and equal importance of career advancement and family relationships.  </p>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid rounded my-5" src="files/123730.jpg" alt="family" style="box-shadow: 5px 5px 5px grey;">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+            
+            <!-- Image with Marker -->
+			
+		
+			
+			
+			
+			
+        	<div class="col-xs-12 col-sm-6 col-md-6 text-center">
+            	
+                	<div class="img-note light-note" style="right:100%; top:100%">
+                    	<div class="note-marker"></div>
+                        <div class="img-note-content">
+                        </div>
+                    </div>
+                	
+                
+            </div>
+        
+        	
+        
+        </div>
+ </div>       
+   
+		  
+		  
+		  
+		  
+		  <div id="overlay" >
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"><br><br><br><br><br><br><div align="center" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;text-size: 150%;"><h1><b>ALMA MATER</b></h1></div></span>
+  </div>
+                <div id="Education">	
+				<br><br><br>
+     
+	<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+	  <div id="accordion">
+        <div id="grow" style="background-color: transparent; border-color: transparent;" class="card">
+         <div class="card-header">
+         <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#USF" style="color: white;
+                                                                                                 text-shadow: 0 0 3px black, 0 0 7px black;">
+                           <h3>University of South Florida<div> Tampa, FL</div></h3>
+                              <div>Class of 2018</div>
+	                     <div>BSE = Information Technologies</div><br></a>
+	                  </div>
+                   <div id="USF" class="collapse">
+     <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+     <p> Studied knowledge-based computer and information technology,
+	 traditional computer science concepts, 
+	 as well as more practical topics including programming, 
+	 applications, networking, 
+	 systems administration and the management of a variety of computing environments.</p>
+                  </div>
+                 </div>
+                </div>
+	           </div>
+    </div>	
+    <div class="col-sm-6">
+	  <div id="accordion">
+       <div id="grow" style="background-color: transparent; border-color: transparent;" class="card" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+        <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#PSLU" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+      <h3>Pyatigorsk State University<div>Pyatigorsk, Russia</div></h3>
+         <div>Class of 2006</div>
+           <div>AA = Linguistics (Cross-cultural Communications)</div><br></a>
+	   </div>
+	       <div id="PSLU" class="collapse">
+        <div class="card-block" style="color: white;
+       text-shadow: 0 0 3px black, 0 0 7px black;">
+	   <p>Trained to use modern critical methodologies, 
+	   from formalism and feminist theory to postcolonialism and cultural studies. 
+	   used literature as the vehicle for the exploration of culture, written expression, and the human
+	   condition; studied techniques to work as innovative professional
+	   communicators in a variety of fields, from government and business to medicine. 
+	    </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+ <br><br><br>
+
+ </div> <!-- end of overlay-->
+
+
+
+
+ 
+
+
+<!--Footer-->
+
+
+<footer class="footer" style="background-image: url('img/agency/backgrounds/bg-footer.jpg')" alt="footer">
+      <div class="container text-center">
+	  <br><br>
+        <div class="row">
+          <div id="grow" class="col-md-4 footer-contact-details">
+            <h4>
+              
+              Call</h4>
+            <p><a href="tel:813-719-0692">813-719-0692</a></p>
+          </div>
+          <div id="grow" class="col-md-4 footer-contact-details">
+            <h4>
+             
+              Visit</h4>
+            <p>Any local Coffee Shop
+              <br>Tampa, FL</p>
+          </div>
+          <div id="grow" class="col-md-4 footer-contact-details">
+            <h4>
+             
+              Email</h4>
+            <p>
+              <a href="mailto:ddyatluk@gmail.com">ddyatluk@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="row footer-social">
+          <div class="col-lg-12">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i href="https://api.whatsapp.com/send?phone=18137190692" class="fa fa-whatsapp fa-fw fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i href="skype:live:dmitry.dyatluk?call" class="fa fa-skype fa-fw fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i href="https://www.linkedin.com/in/dmitry-dyatluk-902a5776" class="fa fa-linkedin fa-fw fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">© 2017 Dmitry S. Dyatluk</p>
+      </div>
+    </footer>
+
+<!-- End Footer-->
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+<!-- progress bar appearance-->
+
+$(function() {
+
+    var $section = $('#progress');
+
+    function loadDaBars() {
+                $(".meter > span").each(function() {
+                    $(this)
+                        .data("origWidth", $(this).width())
+                        .width(0)
+                        .animate({
+                            width: $(this).data("origWidth")
+                        }, 1200);
+                });
+    }
+
+    $(document).bind('scroll', function(ev) {
+        var scrollOffset = $(document).scrollTop();
+        var containerOffset = $section.offset().top - window.innerHeight;
+        if (scrollOffset > containerOffset) {
+            loadDaBars();
+            // unbind event not to load scrolsl again
+            $(document).unbind('scroll');
+        }
+    });
+
+});
+
+
+
+</script>
+
+<script>
+
+
+jQuery(document).ready( function(){
+    jQuery('#hider1').fadeIn(1500);
+	jQuery('#hider1').fadeIn(2000);
+	jQuery('#hider3').fadeIn(2500);
+} );
+
+
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+</body>
+</html>
